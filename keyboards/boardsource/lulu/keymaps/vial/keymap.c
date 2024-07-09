@@ -2,7 +2,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #include QMK_KEYBOARD_H
-#include "features/achordion.h"
 
 enum layers {
     _QWERTY,
@@ -428,7 +427,6 @@ bool oled_task_user(void) {
 #endif
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    if (!process_achordion(keycode, record)) { return false; }
     switch (keycode) {
         case KC_QWERTY:
             if (record->event.pressed) {
@@ -606,8 +604,4 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             /* KEYBOARD PET STATUS END */
     }
     return true;
-}
-
-void matrix_scan_user(void) {
-  achordion_task();
 }
