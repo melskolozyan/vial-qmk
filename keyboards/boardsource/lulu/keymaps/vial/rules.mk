@@ -7,6 +7,7 @@ TAP_DANCE_ENABLE = yes
 OLED_ENABLE = yes
 WPM_ENABLE = yes
 # LTM_ENABLE = yes
+SRC += features/achordion.c
 ifeq ($(strip $(MCU)), atmega32u4)
     QMK_SETTINGS = yes
     COMBO_ENABLE = yes
