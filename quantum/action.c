@@ -361,7 +361,7 @@ void register_mouse(uint8_t mouse_keycode, bool pressed) {
         tp_buttons             = pressed ? tp_buttons | tmp_button_msk : tp_buttons & ~tmp_button_msk;
     }
 #endif
-
+}
 #ifdef BILATERAL_COMBINATIONS
 #    ifndef BILATERAL_COMBINATIONS_LIMIT_CHORD_TO_N_KEYS
 #        define BILATERAL_COMBINATIONS_LIMIT_CHORD_TO_N_KEYS 8 /* modifier state is stored as a single byte in the format (GASC)R(GASC)L */
