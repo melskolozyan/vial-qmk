@@ -6,6 +6,7 @@ TAP_DANCE_ENABLE = yes
 # OLED_DRIVER_ENABLE= yes
 OLED_ENABLE = yes
 WPM_ENABLE = yes
+DEFERRED_EXEC_ENABLE = yes
 # LTM_ENABLE = yes
 ifeq ($(strip $(MCU)), atmega32u4)
     QMK_SETTINGS = yes
