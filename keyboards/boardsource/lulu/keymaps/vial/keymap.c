@@ -428,7 +428,8 @@ bool oled_task_user(void) {
 #endif
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    if (!process_achordion(keycode, record)) { return false; }
+    //    achordion
+    //    if (!process_achordion(keycode, record)) { return false; }
     switch (keycode) {
         case KC_QWERTY:
             if (record->event.pressed) {
