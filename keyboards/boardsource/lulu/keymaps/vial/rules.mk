@@ -1,6 +1,7 @@
 VIA_ENABLE = yes
 VIAL_ENABLE = yes
 
+SRC += features/achordion.c
 VIALRGB_ENABLE = yes
 TAP_DANCE_ENABLE = yes
 # OLED_DRIVER_ENABLE= yes
