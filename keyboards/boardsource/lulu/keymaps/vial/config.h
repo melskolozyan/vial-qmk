@@ -13,6 +13,8 @@
 
 /* QMK */
 #define TAPPING_TERM 200
+#define QUICK_TAP_TERM 0
+#define ACHORDION_STREAK
 
 /* Sunaku patch #56 */
 //#define BILATERAL_COMBINATIONS
